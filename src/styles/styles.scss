@@ -231,30 +231,38 @@ button {
     padding: 4px 8px;
     border-radius: 7px 7px 0 7px;
     color: white;
+    word-break: break-all;
+    max-width: 350px;
   }
   .msg-other {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 5px;
     color: black;
+    img {
+      width: 40px;
+      border-radius: 50%;
+    }
     div {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+
       gap: 5px;
-      img {
-        width: 40px;
-        border-radius: 50%;
-      }
+
       span {
         font-weight: bold;
         white-space: nowrap;
       }
-    }
-    p {
-      background: #48a898;
-      padding: 4px 8px;
-      border-radius: 0 7px 7px 7px;
-      color: white;
+      .msg-text {
+        background: #48a898;
+        padding: 4px 8px;
+        border-radius: 0 7px 7px 7px;
+        font-weight: 450;
+        color: white;
+        word-break: break-all;
+        max-width: 350px;
+        width: fit-content;
+      }
     }
   }
 }
